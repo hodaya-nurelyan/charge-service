@@ -23,14 +23,19 @@ It demonstrates clean, extensible code architecture without any database depende
 
 ```bash
 # Clone repository
-git clone https://github.com/<your-username>/charge-api.git
-cd charge-api
+git clone https://github.com/hodaya-nurelyan/charge-service.git
+cd charge-service
 
 # Install dependencies
 composer install
 
 # Copy example environment file
 cp .env.example .env
+
+# Create bootstrap cache directory if it doesn't exist
+mkdir -p bootstrap/cache
+chmod -R 775 bootstrap/cache
+
 
 # Generate app key
 php artisan key:generate

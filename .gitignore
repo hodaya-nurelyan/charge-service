@@ -42,3 +42,6 @@ composer.lock.bak
 *.cache
 *.tmp
 /database/*.sqlite
+
+/bootstrap/cache/
+!bootstrap/cache/.gitignore
