@@ -26,10 +26,10 @@ It demonstrates clean, extensible code architecture without any database depende
 git clone https://github.com/hodaya-nurelyan/charge-service.git
 cd charge-service
 
-
 # Create bootstrap cache directory if it doesn't exist
-mkdir -p bootstrap/cache
-chmod -R 775 bootstrap/cache
+
+mkdir -p bootstrap/cache storage/framework/cache/data storage/logs storage/framework/views
+chmod -R 775 bootstrap/cache storage/framework/cache/data storage/logs storage/framework/views
 
 # Install dependencies
 composer install
