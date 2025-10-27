@@ -1,0 +1,44 @@
+# Laravel base ignores
+*.log
+.DS_Store
+Thumbs.db
+
+.env
+.env.*
+!.env.example
+.env.backup
+.auth.json
+
+# Dependencies
+/vendor
+/node_modules
+
+# Laravel cache & storage
+/storage/
+!storage/.gitignore
+/bootstrap/cache/
+!bootstrap/cache/.gitignore
+
+# Public build output (Vite / Mix)
+public/build
+public/hot
+public/storage
+
+# IDE / Editor / Tooling
+.idea/
+.vscode/
+.fleet/
+.zed/
+.phpactor.json
+.phpunit.result.cache
+/.phpunit.cache
+
+# Homestead
+Homestead.json
+Homestead.yaml
+
+# Misc
+composer.lock.bak
+*.cache
+*.tmp
+/database/*.sqlite
